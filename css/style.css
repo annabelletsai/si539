@@ -50,7 +50,6 @@ a {
 .navbar{
   background: rgba(0,0,0,0.9);
   overflow: hidden;
-  background: none;
   left: 0;
   padding: 16px;
   position: fixed;
