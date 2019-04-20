@@ -48,6 +48,7 @@ a {
 }
 
 .navbar{
+  background: rgba(0,0,0,0.9);
   overflow: hidden;
   background: none;
   left: 0;
@@ -56,10 +57,6 @@ a {
   top: 0;
   width: 100%;
   z-index: 999;
-}
-
-.navbar.active {
-  background: rgba(0,0,0,0.9);
 }
 
 .navbar #logo {
@@ -130,9 +127,11 @@ address a{
 }
 
 #home .hero-content h1 {
+  background: black;
   color: white;
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
+  padding: 24px;
 }
 
 #home .hero-content .button {
