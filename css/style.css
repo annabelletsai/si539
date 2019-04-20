@@ -1,0 +1,548 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #4a4a4a;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #135D42;
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbar{
+  overflow: hidden;
+  background: none;
+  left: 0;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar.active {
+  background: rgba(0,0,0,0.9);
+}
+
+.navbar #logo {
+  font-size: 0px;
+}
+
+.navbar .links ul {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.navbar .links a {
+  color: #999999;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar .links a.active {
+  border-bottom: 2px solid #a3fdda;
+  color: #a3fdda;
+  font-weight: 500;
+}
+
+.content {
+  padding: 16px;
+}
+
+footer {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+address a{
+  font-size: 40px:
+}
+
+.button {
+  background: #38d799;
+  border-radius: 3px;
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 20px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-image: url('../images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 15px;
+}
+
+.page-title {
+  text-align: center;
+}
+
+#home .hero-content {
+  padding: 260px 0 200px 0;
+  text-align: center;
+}
+
+#home .hero-content h1 {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+}
+
+#home .hero-content .button {
+  margin-top: 30px;
+}
+
+#home .hero-content .button i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#home #about {
+  background: #D8E1E9;
+  color: #4a4a4a;
+  padding: 150px 0;
+}
+
+#home #about .container {
+  max-width: 600px;
+}
+
+#home #about h1,
+#home #about h3 {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 15px;
+}
+
+#home #about h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#home #about .about-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home #about .about-contact .follow-us a {
+  color: #1a1a1a;
+}
+
+#home #team {
+  padding: 100px 0;
+}
+
+#home #team .team-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#home #team .the-team {
+  display: flex;
+}
+
+#home #team .the-team {
+  margin: 50px 0 0 -50px;
+}
+
+#home #team .the-team > div {
+  padding-left: 50px;
+  width: 50%;
+}
+
+#home #team .the-team h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+#home #team .member > p:nth-of-type(2),
+#home #team .member > div > p:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+#price #services {
+  padding: 100px 0;
+}
+
+#price .services {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -50px;
+}
+
+#price .services .service {
+  margin-left: 50px;
+  width: 50%;
+}
+
+#price .services .service h2 {
+  margin-bottom: 10px;
+}
+
+#price .services .service ul {
+  margin-left: 20px;
+}
+
+#wedding #weddingServices {
+  padding: 100px 0;
+}
+
+#wedding #weddingServices .images-carousel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#wedding #weddingServices .images-carousel button {
+  background: #38d799;
+  border: 0;
+  color: #4a4a4a;
+  font-size: 18px;
+  padding: 12px 16px;
+}
+
+#wedding #weddingServices .images-wrapper {
+  overflow: hidden;
+  margin: 30px auto;
+  width: 500px;
+}
+
+#wedding #weddingServices .images img {
+  height: auto;
+  width: 100%;
+}
+
+#wedding #weddingServices .images {
+  align-items: center;
+  display: flex;
+  transition: transform 0.25s;
+}
+
+#contact #contactInfo {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 600px;
+}
+
+#contact #contactInfo .phone {
+  margin-bottom: 0;
+}
+
+#wedding h2 {
+  background: #f5f5f5;
+  cursor: pointer;
+  padding: 16px 12px;
+}
+
+#wedding h2:hover {
+  background: #e1e1e1;
+}
+
+#wedding .services-list {
+  display: none;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+#wedding .services-list.active {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .navbar .links ul {
+    flex-wrap: wrap;
+  }
+
+  .navbar .links ul li {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #home .hero-content {
+    padding: 60px 0;
+  }
+
+  #home .hero .container {
+    padding: 0;
+  }
+
+  #home #about,
+  #home #team,
+  #price #services,
+  #wedding #weddingServices,
+  #contact #contactInfo {
+    padding: 50px 0;
+  }
+
+  #home #team .team-title {
+    margin-bottom: 25px;
+  }
+
+  #home #team .the-team {
+    flex-wrap: wrap;
+    margin: 25px 0 0 0;
+  }
+
+  #home #team .the-team > div {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  #home #team .member-images {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #home #team .images-list {
+    display: block;
+  }
+
+  #home #team .member-images img {
+    height: auto;
+    width: 50%;
+  }
+
+  #home #team #bettyDianne {
+    margin-top: 20px;
+  }
+
+  #price .services {
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  #price .services .service {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #price .services .service:first-child {
+    margin-bottom: 20px;
+  }
+
+  #wedding #weddingServices .images {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #wedding #weddingServices .images img {
+    height: auto;
+    width: 50%;
+  }
+
+  #home #about .about-contact {
+    flex-wrap: wrap;
+  }
+
+  #about .about-contact > div {
+    width: 100%;
+  }
+
+  #about .about-contact .follow-us {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1020px) {
+  #home #team .the-team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+  }
+
+  #home #team .the-team > div {
+    align-items: center;
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  #home #team .the-team #bettyDianne .members {
+    order: 2;
+    padding-left: 30px;
+    width: 50%;
+  }
+
+  #home #team .the-team #bettyDianne .member-images {
+    order: 1;
+    width: 50%;
+  }
+
+  #home #team .the-team .member-details {
+    order: 2;
+    padding-left: 30px;
+    width: 50%;
+  }
+
+  #home #team .the-team .member-images {
+    order: 1;
+    width: 50%;
+  }
+
+  #home #team .the-team .member-images img {
+    display: none;
+    float: left;
+    width: 33.333%;
+  }
+
+  #home #team .the-team .member-images img:nth-child(1),
+  #home #team .the-team .member-images img:nth-child(2),
+  #home #team .the-team .member-images img:nth-child(3) {
+    display: inline-block;
+  }
+
+  #weddingServices .services-container .services-details {
+    padding-right: 30px;
+    width: 60%;
+  }
+}
+
+@media (min-width: 740px) {
+  .navbar .container {
+    align-items: center;
+    display: flex;
+  }
+
+  .navbar .links {
+    margin-left: auto;
+  }
+
+  .navbar .links ul {
+    margin-top: 0;
+  }
+}
+
+.callout { /*overall position of the callout box*/
+  position: fixed; /*does not move from where the current position is */
+  top: 80px; /* 80 px from the top of the screen*/
+  right: 25px;
+  margin-left: 50px;
+  max-width: 200px; /*max width of the overall call out box */
+}
+
+/* header */
+.callout-header {
+  padding: 20px 15px; /*padding of the header up/down left/right */
+  background: #a3fdda;
+  font-size: 15px;
+  color: black;
+}
+
+/* body */
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: 10px; /*position of the button */
+  right: 15px; /*position of the button */
+  color: gray;
+  font-size: 30px; /*size of the button */
+  cursor: pointer;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #a3fdda;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* positioning for botth tthe front and back of the card */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* the backside of the card. */
+.flip-card-back {
+  background-color: #a3fdda;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  color: black;
+  transform: rotateY(180deg);
+}
